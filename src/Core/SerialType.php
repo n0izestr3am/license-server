@@ -3,7 +3,7 @@
 namespace n0izestr3am\AppLicenseServer\Core;
 
 use Illuminate\Support\Str;
-use n0izestr3am\SerialNumber\Func\SerialNumber as SN;
+use Irfa\SerialNumber\Func\SerialNumber as SN;
 
 class SerialType
 {
