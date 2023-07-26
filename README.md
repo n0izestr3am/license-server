@@ -15,7 +15,7 @@ This package based on [app-license-server for Laravel](https://github.com/irfaar
 
     'providers' => [
         ....
-       Irfa\AppLicenseServer\AppLicenseServerServiceProvider::class,
+       n0izestr3am\AppLicenseServer\AppLicenseServerServiceProvider::class,
          ];
 
 
@@ -24,7 +24,7 @@ This package based on [app-license-server for Laravel](https://github.com/irfaar
 
     'aliases' => [
              ....
-      'ALS' => Irfa\AppLicenseServer\Facades\AppLicenseServer::class,
+      'ALS' => n0izestr3am\AppLicenseServer\Facades\AppLicenseServer::class,
     
         ],
 
@@ -41,7 +41,7 @@ php artisan migrate
 
 <h2>Config File</h2>
 
-    config/irfa/app_license_server.php
+    config/n0izestr3am/app_license_server.php
 
 <h2>Inside Config File</h2>
 
