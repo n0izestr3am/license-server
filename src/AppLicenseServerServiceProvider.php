@@ -26,10 +26,10 @@ class AppLicenseServerServiceProvider extends ServiceProvider
     {
         \Route::middleware('api')->any(config('n0izestr3am.app_license_server.license_route'),'n0izestr3am\AppLicenseServer\Controller\AppLicenseController@check')->name(config('n0izestr3am.app_license_server.route_name'));
         $this->publishes([
-            __DIR__.'/../config/n0izestr3am/' => config_path('n0izestr3am')],'license-server');
+            __DIR__.'/../config/n0izestr3am/' => config_path('n0izestr3am')],'app-license-server');
         $this->publishes([
             __DIR__.'/../migrations/' => database_path('migrations'),
-        ], 'license-server');
+        ], 'app-license-server');
 
         
     }

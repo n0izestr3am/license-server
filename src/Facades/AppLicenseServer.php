@@ -1,7 +1,5 @@
 <?php
-/* 
-	Author: Irfa Ardiansyah <irfa.backend@protonmail.com>
-*/
+
 namespace n0izestr3am\AppLicenseServer\Facades;
 
 use Illuminate\Support\Facades\Facade;
