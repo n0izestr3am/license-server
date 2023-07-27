@@ -36,7 +36,7 @@ This package based on [app-license-server for Laravel](https://github.com/irfaar
 <h2>Run Migration</h2>
 
 ```
-php artisan migrate
+ php artisan migrate --path=vendor/n0izestr3am/license-server/migrations
 ```
 
 <h2>Config File</h2>

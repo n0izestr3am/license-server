@@ -10,4 +10,11 @@
 | contains the "web" middleware group. Now create something great!
 |
 */
-Route::any('/check','Controller\AppLicenseController@check');
+
+Route::prefix('license')->namespace('n0izestr3am\AppLicenseServer\Controller')
+      ->middleware('web')->group(function()
+     {
+	  Route::get('/check', 'AppLicenseController@check')->name('applicensecontroller.check');
+    }
+
+);

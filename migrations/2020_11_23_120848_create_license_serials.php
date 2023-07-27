@@ -16,12 +16,15 @@ class CreateLicenseSerials extends Migration
         Schema::create('license_serials', function (Blueprint $table) {
             $table->bigIncrements('id');
             $table->string('name',65);
+            $table->string('email')->nullable()->unique();
             $table->string('domain',120);
             $table->string('phone_number',30)->nullable();
             $table->text('address')->nullable();
+            $table->text('notif')->nullable();
+            $table->decimal('price', 8, 2)->nullable();
             $table->string('serial',120)->unique();
             $table->string('expired',16);
-            $table->boolean('logging')->default(0);
+            $table->timestamp('date')->nullable();
             $table->boolean('status')->default(0);
             $table->timestamps();
         });

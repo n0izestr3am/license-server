@@ -13,4 +13,10 @@ use Illuminate\Http\Request;
 |
 */
 
-Route::get('/check','Controller\AppLicenseController@check');
+Route::prefix('license')->namespace('n0izestr3am\AppLicenseServer\Controller')
+      ->middleware('api')->group(function()
+     {
+	   Route::get('/check', 'AppLicenseController@check')->name('applicensecontroller.check');
+    }
+
+);

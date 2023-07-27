@@ -82,7 +82,13 @@ class SerialManager extends SerialGenerator
     }
     private function insertToTable()
     {
-        return LicenseSerial::create(['name'=>$this->name,'domain'=>$this->domain,'phone_number'=>$this->phone_number,'address'=>$this->address,'serial'=>$this->serial,'expired'=>$this->expired]);
+        return LicenseSerial::create([
+            'name'=>$this->name,
+            'domain'=>$this->domain,
+            'phone_number'=>$this->phone_number,
+            'address'=>$this->address,
+            'serial'=>$this->serial,
+            'expired'=>$this->expired]);
     }
 
     protected function disableSN($sn)
