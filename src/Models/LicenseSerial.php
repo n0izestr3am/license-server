@@ -14,9 +14,12 @@ class LicenseSerial extends Model
     	'phone_number',
     	'notif',
     	'price',
+    	'judul_notif',
+    	'tgl_notif',
     	'address',
     	'serial',
     	'date',
     	'expired',
     	'status'];
 }
+

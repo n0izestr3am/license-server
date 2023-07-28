@@ -64,6 +64,10 @@ class SerialManager extends SerialGenerator
             $this->domain = $params['domain'];
             $this->phone_number = $params['phone_number'];
             $this->address = $params['address'];
+            $this->tgl_notif = $params['tgl_notif'];
+            $this->judul_notif = $params['judul_notif'];
+            $this->notif = $params['notif'];
+            $this->email = $params['email'];
             $this->serial =$sn;
             $this->expired = $expired;
 
@@ -88,6 +92,11 @@ class SerialManager extends SerialGenerator
             'phone_number'=>$this->phone_number,
             'address'=>$this->address,
             'serial'=>$this->serial,
+            'tgl_notif'=>$this->tgl_notif,
+            'judul_notif'=>$this->judul_notif,
+            'notif'=>$this->notif,
+            'notif'=>$this->notif,
+            'email'=>$this->email,
             'expired'=>$this->expired]);
     }
 
